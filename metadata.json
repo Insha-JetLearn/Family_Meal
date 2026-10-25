@@ -1,0 +1,6 @@
+{
+  "name": "FamilyChef AI",
+  "description": "FamilyChef AI is an intelligent family meal planning web application with pantry scanning, personalized 7-day meal plans, recipe customization, an AI cooking assistant, and gamified nutrition tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

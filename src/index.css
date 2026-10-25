@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #0b0e14;
+    color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Custom gradients matching reference screenshots */
+.gradient-bistro {
+  background: linear-gradient(105deg, #ff5e36 0%, #f7931e 52%, #4ade80 100%);
+}
+
+.gradient-bistro-btn {
+  background: linear-gradient(90deg, #ff5e36 0%, #f7931e 55%, #4ade80 100%);
+  transition: all 0.25s ease;
+}
+
+.gradient-bistro-btn:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 8px 25px -4px rgba(247, 147, 30, 0.4);
+}
+
+.gradient-bistro-tab {
+  background: linear-gradient(90deg, #ff5e36 0%, #f7931e 50%, #4ade80 100%);
+}
+
+.bg-bistro-dark {
+  background-color: #0c0e15;
+}
+
+.bg-bistro-card {
+  background-color: #141724;
+}
+
+.border-bistro {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
